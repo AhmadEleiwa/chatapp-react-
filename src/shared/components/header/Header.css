@@ -1,0 +1,131 @@
+.Main-Header{
+    background-color: #17202A;
+    width: 100vw;
+    height: 5rem;
+    justify-content: space-around;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top:0;
+  /* color: ; */
+}
+.Main-Header-transparent{
+    background-color: transparent;
+}
+
+.Main-Header .title{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5rem;
+    margin: 20px ;
+    text-decoration: none;
+}
+
+
+.Main-Header-white-light{
+    background-color: #FFF8F3;
+   
+}
+
+.Main-Header-white-light .title{
+    color: #222831;
+   
+}
+.Main-Header-light{
+    background-color: #DDDDDD;
+   
+}
+
+.Main-Header-light .title{
+    color: #222831;
+   
+}
+
+.Main-Header-darkblue{
+    background-color: #222831;
+   
+}
+.Main-Header-darkblue .title{
+    color: #DDDDDD;
+   
+}
+
+.Main-Header-dark{
+    background-color: #171717;
+   
+}
+
+.Main-Header-dark .title{
+    color: #DDDDDD;
+   
+}
+
+
+.Main-Header .content{
+
+    display: block;
+
+}
+
+
+.side-drawer__content {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+}
+.side-drawer__content .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+
+}
+.side-drawer__content .nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical{
+    background-color: #17202A;
+    width: 5rem;
+    height: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.vertical .nav-links{
+    display: none;
+}
+.vertical  .MenuIcon{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.vertical .title{
+    display: none;
+}
+.vertical .content{
+    display: none;
+}
+
+@media only screen and (max-width:765px) {
+    .Main-Header .content{
+        display: none;
+    }
+}

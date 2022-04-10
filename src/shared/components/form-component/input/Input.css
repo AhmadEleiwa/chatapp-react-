@@ -1,0 +1,106 @@
+
+.input{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #BBBBBB;
+    /* color: ; */
+    padding: 10px;
+    font-size: large;
+
+    outline: none;
+    transition: outline 0.03s ease;
+    
+    position: relative;
+
+
+  }
+.textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background-color: white;
+    border: 1px solid #BBBBBB;
+    padding: 10px;
+    font-size: large;
+    resize: vertical;
+    overflow: auto;
+    outline: none;
+    transition: outline 0.03s ease;
+}
+
+
+.input::placeholder{
+    color: #b1b1b1;
+}
+.input:focus{
+
+    
+    outline: 4px #85bbd493 solid;
+}
+.input-dark{
+    background-color: #444444;
+    color: #dfdfdf;
+    border: 1px solid #474747;
+    
+}
+.input-dark::placeholder{
+    color: #818080;
+}
+.input-dark::selection{
+    background-color: #7c7c7c;
+}
+.input-dark:focus{
+    outline: 4px rgba(107, 152, 173, 0.2) solid;
+    
+}
+
+
+.input-no_outline:focus{
+    outline: 4px solid transparent;
+}
+
+
+.input-dev{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.input-dev label{
+ margin-bottom: 15px;
+ font-size: larger;
+}
+.input-dev--invalid label,
+.input-dev--invalid p {
+  color: red;
+}
+
+.input-dev--invalid input,
+.input-dev--invalid textarea {
+  border-color: red;
+  background: #ffd1d1;
+}
+.input-dev--invalid input:focus,
+.input-dev--invalid textarea:focus {
+  outline: none;
+}
+
+
+.input-dev--invalid-dark input:focus,
+.input-dev--invalid-dark textarea:focus {
+  outline: none;
+}
+
+.input-dev--invalid-dark label,
+.input-dev--invalid-dark p {
+  color: #DA0037;
+  
+}
+
+.input-dev--invalid-dark input,
+.input-dev--invalid-dark textarea {
+  border-color: #DA0037;
+  background: #3f2f2f;
+}
+

@@ -1,0 +1,45 @@
+.Form{
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    
+}
+.Form-light{
+    background-color: white;
+    color: #171717;
+    border: 1px solid #BBBBBB;
+}
+.Form-dark{
+    background-color: #171717;
+    color: #dfdfdf;
+    border: 1px solid #2a2a2a;
+}
+
+.Form .input, input,textarea{
+    width: 80%;
+   
+}
+.Form .input {
+    position: relative;
+}
+
+.Form-noborder{
+    border: none;
+}
+.Form-nocolor{
+    background-color: transparent;
+}
+
+@media only screen and  (max-width:765px) {
+    .Form{
+        width: 80%;
+        padding: 5px;
+        height: 70%;
+        justify-content: left;
+
+    }
+}
