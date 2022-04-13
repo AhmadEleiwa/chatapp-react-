@@ -1,12 +1,16 @@
 import React from "react";
-import UserList from "./components/UserList";
+import ChatView from "./components/chat-view/ChatView";
+import UserList from "./components/user-list/UserList";
 
+
+import './ChatPage.css'
 
 const ChatPage = () =>{
 
 
-    return <div>
+    return <div className="chat" >
         <UserList />
+        <ChatView />
     </div>
 }
 
