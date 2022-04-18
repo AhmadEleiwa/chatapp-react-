@@ -1,0 +1,33 @@
+
+.message{
+    width: 100%;
+}
+ 
+.message .message-card { 
+    width: aute;
+    max-width: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    text-align: center;
+    float: right;
+
+}
+.message .sender{
+    background-color: #EFFFFD;
+    color: #1f1f1f;
+    float: left;
+}
+
+.message .message-card p, iframe, a{
+    width: 95%;
+    margin: 10px;
+    word-break: break-all;
+    border: none;
+}
+.message .message-card iframe{
+    height: 320px;
+}
+.message .message-card a{
+    margin: 5px;
+    color: rgb(155, 155, 155);
+}

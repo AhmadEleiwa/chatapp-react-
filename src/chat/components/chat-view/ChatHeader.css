@@ -4,6 +4,7 @@
     width: 100%;
     justify-content: space-between;
     background-color: white;
+    height: 5%;
 }
 
 
@@ -11,18 +12,36 @@
     width: 50%;
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 .chat-header .right img{
     width: 50px;
     margin-left: 20px;
     margin-right: 10px;
-    height: 50px;
+    height: 100%;
     border-radius: 50%;
 }
 
 .chat-header .left{
     width: 50%;
     display:  flex; 
-    text-align: center;
+    align-items: center;
     justify-content: left;
+    padding-left: 5px;
+}
+
+.chat-header .right .right-content {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.chat-header .right .right-content p{
+    margin: 0;
+    font-size: large;
+}
+
+.chat-header .right .right-content .right-content__date{
+    opacity: 0.7;
+    font-size: medium;
 }

@@ -1,0 +1,24 @@
+.settings-button{
+    display: flex;
+    flex-direction: column;
+    width: 2.3rem;
+    height: 2.3rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.17s ease-in;
+}
+.settings-button:active{
+    background-color: rgb(200, 200, 200);
+}
+.settings-button div{
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+}
+

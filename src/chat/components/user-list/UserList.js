@@ -12,9 +12,9 @@ const users = [
 const UserList = props =>{
 
     const content = users.map(user => 
-        <div>
-            <UserItem id={user.id} name={user.name} img={user.img} text={user.text} date={user.date} />
-            <div  style={{margin:'0px' , width:'100%' , backgroundColor:'grey', opacity:'0.5', height:'1px'}} />
+        <div  key={user.id}>
+            <UserItem key={user.id} id={user.id} name={user.name} img={user.img} text={user.text} date={user.date} />
+            <div  style={{margin:'auto' , width:'95%' , backgroundColor:'grey', opacity:'0.3', height:'1px'}} />
         </div>
         )
     return <div className="user-list">
