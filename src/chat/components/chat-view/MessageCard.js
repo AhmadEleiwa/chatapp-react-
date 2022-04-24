@@ -13,7 +13,7 @@ const MessageCard = props =>{
        let link = content.substring(content.search('https://www.youtube.com/watch') , content.length)
        let frame = link.replace('watch?v=', 'embed/')
        element.push(<iframe  src={frame}></iframe>)
-       element.push(<Link  to={link} target='_blank'>{link}</Link>)
+       element.push(<a  href={link} target='_blank'>{link}</a>)
        element.push(<p>{content.replace(link, '')}</p>) 
        
     }
