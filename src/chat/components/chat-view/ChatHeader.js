@@ -5,7 +5,7 @@ import SettingsButton from "../../../shared/components/icons/SettingsButton";
 
 const ChatHeader = props =>{
 
-    return <div className="chat-header">
+    return <div className="chat-header" onClick={props.onClick}>
         <div className="left">
             <SettingsButton />
         </div>

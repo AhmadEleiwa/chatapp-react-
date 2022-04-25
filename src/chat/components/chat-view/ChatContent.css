@@ -1,6 +1,6 @@
 .chat-content{
     display: flex;
     flex-direction: column;
-    height: 85%;
+    height: 88%;
     overflow-y: scroll;
 }

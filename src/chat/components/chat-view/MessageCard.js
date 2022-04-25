@@ -20,11 +20,25 @@ const MessageCard = props =>{
     else{
         element.push(<p>{props.children}</p>)
     }
-    return <div className='message'>
+
+    const loaded = event =>{
+        event.target.scrollIntoView();
+        console.log(event)
+    }
+
+    if(!props.scroll)
+    return <div className={`message `}    >
         <Card className={`message-card ${props.sender? 'sender' : ''}`}  >
            {element}
     </Card>
     </div>
+    else{
+    return <div className={`message ${props.scroll? 'scroll': ''}`}  onMouseDown={loaded}  >
+        <Card className={`message-card ${props.sender? 'sender' : ''}`}  >
+           {element}
+    </Card>
+    </div>
+    }
 }
 
 export default MessageCard

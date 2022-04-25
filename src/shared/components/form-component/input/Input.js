@@ -46,8 +46,17 @@ const Input = props => {
     
     useEffect(() => {
         props.onInput((props.id ? props.id : props.label ),inputState.value, inputState.isValid)
+        // console.log(inputState.value)
     }, [inputState.value, inputState.isValid, props.onInput]);
     let content ;
+
+    useEffect(()=>{
+      dispatch({
+        type: 'CHANGE',
+        val: '',
+        validators: props.validators
+      });
+    },[props.reset])
     if(props.type.trim() === 'textarea' ){
     content =(
         <textarea

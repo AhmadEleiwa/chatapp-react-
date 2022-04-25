@@ -1,0 +1,16 @@
+.form-sender{
+    display: flex;
+    flex-direction: row;
+  
+    height: 4%;
+    justify-content: stretch;
+    align-items: center;
+    margin: 0px;
+    border: none;
+    border-radius: 0;
+    background-color: #f1f1f1 ;
+}
+
+.form-sender .Input{
+    width: 90%;
+}

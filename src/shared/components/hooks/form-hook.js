@@ -31,6 +31,7 @@ const formReducer = (state, action) => {
     default:
       return state;
   }
+  
 };
 
 export const useForm = (initialInputs, initialFormValidity) => {
